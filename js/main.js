@@ -22,7 +22,7 @@ scene.add(spotLight);
 // material.bumpScale = 0.05
 const earthGeometry = new THREE.SphereGeometry(10, 50, 50);
 var loader = new THREE.TextureLoader();
-const texture = loader.load('/images/8081_earthmap10k.jpg');
+const texture = loader.load('images/8081_earthmap10k.jpg');
 const bump = loader.load('images/earthbump1k.jpg');
 const spec = loader.load('images/earthspec1k.jpg');
 const earthMaterial = new THREE.MeshPhongMaterial({
@@ -37,7 +37,7 @@ const earth = new THREE.Mesh(earthGeometry, earthMaterial);
 scene.add(earth);
 //Clouds
 const cloudGeometry = new THREE.SphereGeometry(10.3, 50, 50);
-const cloudTexture = loader.load('/images/earthcloudmap.jpg');
+const cloudTexture = loader.load('images/earthcloudmap.jpg');
 // const cityTexture = loader.load('/images/earthlights1k.jpg');
 const cloudMaterial = new THREE.MeshPhongMaterial({
   map: cloudTexture,
@@ -49,7 +49,7 @@ const clouds = new THREE.Mesh(cloudGeometry, cloudMaterial);
 scene.add(clouds);
 //Stars
 const starGeometry = new THREE.SphereGeometry(1000, 50, 50);
-const starTexture = loader.load('/images/starfield.png');
+const starTexture = loader.load('images/starfield.png');
 const starMaterial = new THREE.MeshPhongMaterial({
   map: starTexture,
   side: THREE.DoubleSide,
@@ -59,8 +59,8 @@ const starField = new THREE.Mesh(starGeometry, starMaterial);
 scene.add(starField);
 //Moon
 const moonGeometry = new THREE.SphereGeometry(3.5, 50, 50);
-const moonTexture = loader.load('/images/moonmap1k.jpg');
-const moonBump = loader.load('/images/moonbump1k.jpg');
+const moonTexture = loader.load('images/moonmap1k.jpg');
+const moonBump = loader.load('images/moonbump1k.jpg');
 const moonMaterial = new THREE.MeshPhongMaterial({
   map: moonTexture,
   bumpMap: moonBump
