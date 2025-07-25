@@ -30,7 +30,7 @@ const earthMaterial = new THREE.MeshPhongMaterial({
   color: 0xf2f2f2,
   bumpMap: bump,
   bumpScale: 0.09,
-  specular: spec,
+  specularMap: spec,
   shininess: 5
 });
 const earth = new THREE.Mesh(earthGeometry, earthMaterial);
